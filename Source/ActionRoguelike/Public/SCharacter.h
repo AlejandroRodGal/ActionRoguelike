@@ -27,6 +27,12 @@ protected:
 	UCameraComponent* CameraComp;
 	
 	void MoveForward(float Value);
+	void MoveRight(float Value);
+
+	void PrimaryAttack();
+
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<AActor> ProjectileClass;
 	
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
